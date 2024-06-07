@@ -1,0 +1,212 @@
+.table1, .table2, .table3, .table4 {
+    background-color: rgba(114, 65, 24, 0);
+    height: 150px;
+    position: absolute;
+    background-size: cover;
+}
+
+body {
+    background-image: url(Untitled-2.png);
+}
+
+.table1 {
+    width: 1200px;
+    left: 450px;
+}
+
+.table2 {
+    width: 610px;
+    left: 300px;
+    top: 39%;
+}
+
+.table3 {
+    width: 600px;
+    left: 1020px;
+    top: 39%;
+}
+
+.table4 {
+    width: 1200px;
+    left: 450px;
+    top: 80%;
+}
+
+.computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    image-rendering: pixelated;
+    margin: 10px;
+}
+
+.monitor {
+    width: 100px;
+    height: 70px;
+    background-color: #f1ebeb;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+    image-rendering: pixelated;
+}
+
+.screen {
+    width: 90%;
+    height: 80%;
+    background-color: #64b5f6;
+    border: 2px solid #1e88e5;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    image-rendering: pixelated;
+    
+    background-image: url(giphy.gif);
+    background-size: cover;
+}
+
+.screen.playing {
+    background-image: url(capoo-gaming.gif);
+    background-size: cover;
+}
+
+.base {
+    width: 80px;
+    height: 10px;
+    background-color: #444;
+    border: 2px solid #222;
+    border-radius: 2px;
+    image-rendering: pixelated;
+}
+
+#comp1 {
+    position: absolute;
+    left: 20px;
+}
+
+#comp2 {
+    position: absolute;
+    left: 300px;
+}
+
+#comp3 {
+    position: absolute;
+    left: 580px;
+}
+
+#comp4 {
+    position: absolute;
+    left: 860px;
+}
+
+#comp5 {
+    position: absolute;
+    left: 80px;
+}
+
+#comp6 {
+    position: absolute;
+    left: 360px;
+}
+
+#comp7 {
+    position: absolute;
+    left: 80px;
+}
+
+#comp8 {
+    position: absolute;
+    left: 360px;
+}
+
+#comp9 {
+    position: absolute;
+    left: 20px;
+    transform: rotate(180deg);
+}
+
+#comp10 {
+    position: absolute;
+    left: 300px;
+    transform: rotate(180deg);
+}
+
+#comp11 {
+    position: absolute;
+    left: 580px;
+    transform: rotate(180deg);
+}
+
+#comp12 {
+    position: absolute;
+    left: 860px;
+    transform: rotate(180deg);
+}
+
+.hearts {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+}
+
+.heart {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 24px; /* Adjust size as necessary */
+}
+
+.character {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: left 1s linear, top 1s linear;
+    background-image: url('character.png'); /* Add your character image here */
+    background-size: cover;
+
+    background-image: url(MSV.gif);
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.game-over-message {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.restart-button {
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
